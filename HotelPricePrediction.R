@@ -1,7 +1,6 @@
 # Hotel Price Prediction (class final project)
-# Code created by Professor Alexandre Belloni
 
-### source functions
+### source functions, functions code created by Professor Alexandre Belloni
 source("DataAnalyticsFunctions.R") 
 source("PerformanceCurves.R")
 
