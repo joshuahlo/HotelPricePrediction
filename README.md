@@ -42,8 +42,17 @@ Example:
 <img width="856" alt="image" src="https://github.com/user-attachments/assets/bbe37567-f3a3-4ad2-9793-7ec4f322572b" />
 
 ### 3. Unsupervised Learning
-- Applied K-means clustering to identify patterns in customer behavior.
-- Determined the optimal number of clusters using AIC and HDIC.
+#### Applied K-means clustering to identify patterns in customer behavior.
+#### Determined the optimal number of clusters using AIC and HDIC. 
+<img width="618" alt="image" src="https://github.com/user-attachments/assets/4fe3e068-a7e3-432f-8153-a1b59eb525e1" />
+We did k-means clustering to find the optimal number of clusters in our analysis. AIC measures the goodness of fit but penalizes the number of parameters. BIC does something similar to AIC but will additionally prevent overfitting. However, this applies more of a penalty when we want more clusters; hence we do not use BIC in this case. Finally, HDIC applies a penalty that grows logarithmically with the number of parameters. We want to minimize IC but also not have too many clusters as that may overfit the data. We use HDIC in this case as a balance between BIC and AIC. 
+
+TLDR; optimal number of clusters is 23
+
+
+<img width="1283" alt="image" src="https://github.com/user-attachments/assets/b2eb17c3-0040-4062-9e40-4e5a1c618c55" />
+We find that cluster 16 has a mean cancellation time of 0.94, and by far the highest mean lead time compared to every other cluster. This could indicate that almost all the reservations were cancelled in this cluster. This could indicate a correlation between the two, and we keep this fact in mind when creating our models.
+
 
 ### 4. Model Development
 - **Logistic Regression**:
