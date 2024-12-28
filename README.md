@@ -45,6 +45,7 @@ Example:
 #### Applied K-means clustering to identify patterns in customer behavior.
 #### Determined the optimal number of clusters using AIC and HDIC. 
 <img width="618" alt="image" src="https://github.com/user-attachments/assets/4fe3e068-a7e3-432f-8153-a1b59eb525e1" />
+
 We did k-means clustering to find the optimal number of clusters in our analysis. AIC measures the goodness of fit but penalizes the number of parameters. BIC does something similar to AIC but will additionally prevent overfitting. However, this applies more of a penalty when we want more clusters; hence we do not use BIC in this case. Finally, HDIC applies a penalty that grows logarithmically with the number of parameters. We want to minimize IC but also not have too many clusters as that may overfit the data. We use HDIC in this case as a balance between BIC and AIC. 
 
 TLDR; optimal number of clusters is 23
